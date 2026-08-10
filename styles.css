@@ -224,13 +224,17 @@ a:focus-visible {
 @media (max-width: 700px) {
   .invitation {
     grid-template-columns: 5.5rem minmax(0, 1fr) 5.5rem;
-    min-height: 36rem;
+    min-height: 21.72rem;
   }
 
   .flowers {
-    height: 36rem;
-    object-fit: cover;
+    height: auto;
+    aspect-ratio: 475 / 1875;
+    object-fit: contain;
   }
+
+  .flowers--left { object-position: left bottom; }
+  .flowers--right { object-position: right bottom; }
 
   .names-text {
     font-size: clamp(3.25rem, 15vw, 6rem);
