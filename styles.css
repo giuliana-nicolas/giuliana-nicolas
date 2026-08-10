@@ -161,6 +161,14 @@ address {
   text-underline-offset: .35rem;
 }
 
+.text-link__icon {
+  display: inline-block;
+  width: .9em;
+  height: .9em;
+  margin-left: .2em;
+  vertical-align: -.05em;
+}
+
 .rsvp {
   display: grid;
   grid-template-columns: .9fr 1.1fr;
