@@ -141,7 +141,7 @@ address {
   grid-template-columns: .9fr 1.1fr;
   align-items: start;
   gap: clamp(3rem, 8vw, 9rem);
-  background: var(--mist);
+  background: var(--paper);
 }
 
 .rsvp__intro {
