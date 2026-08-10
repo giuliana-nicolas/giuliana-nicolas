@@ -2,14 +2,12 @@
 
 A small static site designed for GitHub Pages. It uses plain HTML, CSS, and JavaScript, so there is no build step and the layout is easy to replace later.
 
-## Personalize it
+## Content
 
-Edit `index.html` to replace:
-
-- `Alex & Sam`, the date, and RSVP deadline
-- the venue name and address
-- the Google Maps link
-- the RSVP guest-count options
+The invitation is set up for Giuliana and Nicolás, with the ceremony details,
+Google Maps directions, and the embedded RSVP form in `index.html`. The names,
+date, venue, and floral artwork are loaded from the extracted images in
+`assets/`.
 
 ## RSVP submissions
 
