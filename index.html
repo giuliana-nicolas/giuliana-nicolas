@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Wedding details and RSVP for Alex and Sam." />
+    <title>Alex & Sam — 20 June 2027</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Italiana&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="hero" aria-labelledby="wedding-title">
+        <div class="hero__copy">
+          <p class="eyebrow">Save the date · 20 June 2027</p>
+          <h1 id="wedding-title"><span>Alex</span><i aria-hidden="true">&</i><span>Sam</span></h1>
+          <p class="hero__intro">We’re getting married, and we’d love to celebrate with you.</p>
+          <a class="button button--primary" href="#rsvp">Reply to our invitation</a>
+        </div>
+
+        <figure class="hero__figure" aria-label="An abstract illustration of two interlocking wedding rings">
+          <svg viewBox="0 0 640 720" role="img" aria-hidden="true">
+            <path class="figure__stem" d="M319 690C319 485 322 305 322 104" />
+            <path class="figure__leaf" d="M322 421C239 389 202 321 214 254C282 273 326 323 322 421Z" />
+            <path class="figure__leaf" d="M323 534C394 503 432 445 425 385C361 399 320 450 323 534Z" />
+            <circle class="figure__ring figure__ring--left" cx="265" cy="156" r="103" />
+            <circle class="figure__ring figure__ring--right" cx="384" cy="156" r="103" />
+          </svg>
+        </figure>
+      </section>
+
+      <section class="details" aria-labelledby="venue-title">
+        <div class="details__heading">
+          <p class="eyebrow">The celebration</p>
+          <h2 id="venue-title">Meet us at<br />La Granja</h2>
+        </div>
+        <div class="details__content">
+          <p class="details__date">Sunday, 20 June 2027<br />Ceremony at 17:00</p>
+          <address>
+            La Granja<br />Carrer de l’Exemple, 24<br />08000 Barcelona, Spain
+          </address>
+          <a class="text-link" href="https://maps.google.com/?q=La+Granja+Barcelona" target="_blank" rel="noreferrer">
+            Open in Google Maps <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="rsvp" id="rsvp" aria-labelledby="rsvp-title">
+        <div class="rsvp__intro">
+          <p class="eyebrow">Kindly reply</p>
+          <h2 id="rsvp-title">Will you join us?</h2>
+          <p>Please reply by 20 May 2027. One response per invitation is perfect.</p>
+        </div>
+
+        <div class="rsvp-form">
+          <iframe
+            class="rsvp-form__embed"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSc_BeQsUmRHHOHM_D9-0On7cRMzjbf0Xj8kIGSQkAbvsQdtTQ/viewform?embedded=true"
+            title="Wedding RSVP form"
+            loading="lazy"
+          >Loading RSVP form…</iframe>
+          <p class="rsvp-form__fallback">
+            If the form does not load, <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_BeQsUmRHHOHM_D9-0On7cRMzjbf0Xj8kIGSQkAbvsQdtTQ/viewform" target="_blank" rel="noreferrer">open it in a new tab</a>.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer><p>Alex & Sam · Barcelona · 2027</p></footer>
+  </body>
+</html>
