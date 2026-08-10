@@ -118,7 +118,8 @@ h2 {
 }
 
 #venue-title,
-#rsvp-title {
+#rsvp-title,
+#travel-group-title {
   font-size: clamp(2.75rem, 6.5vw, 6rem);
 }
 
@@ -212,6 +213,47 @@ address {
   text-underline-offset: .25rem;
 }
 
+.travel-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  min-height: auto;
+  padding: 2rem clamp(2rem, 6vw, 6rem);
+  background: var(--names-green);
+  color: var(--white);
+}
+
+.travel-group__content {
+  max-width: 30rem;
+  border-left: 1px solid rgba(255, 255, 255, .35);
+  padding: .75rem clamp(2rem, 6vw, 6rem);
+}
+
+.travel-group__qr {
+  display: block;
+  width: min(100%, 20rem);
+  height: auto;
+  margin: 0 0 1.5rem -1.5rem;
+}
+
+.travel-group__link {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  color: var(--white);
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: var(--peach);
+  text-decoration-thickness: 2px;
+  text-underline-offset: .45rem;
+}
+
+.travel-group__icon {
+  width: .9em;
+  height: .9em;
+}
+
 footer {
   padding: 1.5rem;
   background: var(--ink);
@@ -259,18 +301,31 @@ a:focus-visible {
   .event-info__mobile-break { display: inline; }
 
   .details,
-  .rsvp {
+  .rsvp,
+  .travel-group {
     grid-template-columns: 1fr;
     gap: 3rem;
     padding: 4rem 1.5rem;
   }
 
-  .details { padding-block: 2.5rem; }
+  .details,
+  .travel-group { padding-block: 2.5rem; }
 
   .details__content {
     border-top: 1px solid rgba(255, 255, 255, .35);
     border-left: 0;
     padding: 1.5rem 0 0;
+  }
+
+  .travel-group__content {
+    border-top: 1px solid rgba(255, 255, 255, .35);
+    border-left: 0;
+    padding: 1.5rem 0 0;
+    text-align: center;
+  }
+
+  .travel-group__qr {
+    margin: 0 auto 1.5rem;
   }
 
   .rsvp__intro { position: static; }
