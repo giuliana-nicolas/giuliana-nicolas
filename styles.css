@@ -229,6 +229,7 @@ a:focus-visible {
 
   .flowers {
     height: 36rem;
+    object-fit: cover;
   }
 
   .names-text {
