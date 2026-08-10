@@ -47,15 +47,20 @@ a { color: inherit; }
   text-align: center;
 }
 
-.names {
+.names-text {
   display: block;
-  width: min(100%, 66rem);
-  height: auto;
   margin: 0 auto;
+  color: #667d41;
+  font-family: "Great Vibes", cursive;
+  font-size: clamp(4.5rem, 10vw, 10rem);
+  font-weight: 400;
+  letter-spacing: -.02em;
+  line-height: .9;
+  white-space: nowrap;
 }
 
 .event-info {
-  margin: clamp(1.5rem, 4vh, 3.5rem) auto 0;
+  margin: clamp(8rem, 16vh, 5rem) 0 0;
   font-family: "Alegreya Sans", sans-serif;
   font-size: clamp(1.1rem, 1.7vw, 1.5rem);
   font-weight: 300;
@@ -222,10 +227,8 @@ a:focus-visible {
     height: 36rem;
   }
 
-  .names {
-    width: 135%;
-    max-width: none;
-    margin-left: -17.5%;
+  .names-text {
+    font-size: clamp(3.25rem, 15vw, 6rem);
   }
 
   .event-info {
