@@ -73,6 +73,8 @@ a { color: inherit; }
 
 .event-info__date { font-weight: 400; }
 
+.event-info__mobile-break { display: none; }
+
 .event-info__venue {
   margin-top: 1.5rem !important;
 }
@@ -240,6 +242,8 @@ a:focus-visible {
   .event-info {
     margin-top: 1.5rem;
   }
+
+  .event-info__mobile-break { display: inline; }
 
   .details,
   .rsvp {
