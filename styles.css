@@ -71,7 +71,18 @@ a { color: inherit; }
 
 .event-info p { margin: 0; }
 
-.event-info__date { font-weight: 400; }
+.event-info__date {
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.event-info__invitation {
+  margin: 2rem 0 0 !important;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 2em;
+  font-weight: 300;
+  letter-spacing: .05em;
+}
 
 .event-info__mobile-break { display: none; }
 
@@ -326,6 +337,16 @@ a:focus-visible {
 
   .event-info {
     margin-top: 1.5rem;
+  }
+
+  .event-info__date { font-size: 1.4em; }
+
+  .event-info__invitation {
+    width: 100%;
+    font-size: clamp(1rem, 5vw, 1.4em);
+    letter-spacing: .02em;
+    text-align: center;
+    white-space: nowrap;
   }
 
   .event-info__mobile-break { display: inline; }
