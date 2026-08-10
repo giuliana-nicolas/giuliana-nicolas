@@ -39,8 +39,18 @@ a { color: inherit; }
   object-fit: contain;
 }
 
-.flowers--left { object-position: left center; }
-.flowers--right { object-position: right center; }
+.flowers--left {
+  width: auto;
+  justify-self: start;
+  object-position: left center;
+  transform: translateX(-30%);
+}
+.flowers--right {
+  width: auto;
+  justify-self: end;
+  object-position: right center;
+  transform: translateX(29%);
+}
 
 .invitation__center {
   width: 100%;
@@ -233,8 +243,18 @@ a:focus-visible {
     object-fit: contain;
   }
 
-  .flowers--left { object-position: left bottom; }
-  .flowers--right { object-position: right bottom; }
+  .flowers--left {
+    width: auto;
+    height: 20.8rem;
+    aspect-ratio: auto;
+    object-position: left bottom;
+  }
+  .flowers--right {
+    width: auto;
+    height: 20.8rem;
+    aspect-ratio: auto;
+    object-position: right bottom;
+  }
 
   .names-text {
     font-size: clamp(3.25rem, 15vw, 6rem);
