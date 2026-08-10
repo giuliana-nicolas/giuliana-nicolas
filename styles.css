@@ -47,8 +47,7 @@ a { color: inherit; }
   text-align: center;
 }
 
-.names,
-.event-info {
+.names {
   display: block;
   width: min(100%, 66rem);
   height: auto;
@@ -56,8 +55,23 @@ a { color: inherit; }
 }
 
 .event-info {
-  width: min(92%, 58rem);
-  margin-top: clamp(1.5rem, 4vh, 3.5rem);
+  margin: clamp(1.5rem, 4vh, 3.5rem) auto 0;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: clamp(1.1rem, 1.7vw, 1.5rem);
+  font-weight: 300;
+  line-height: 1.25;
+}
+
+.event-info p { margin: 0; }
+
+.event-info__date { font-weight: 400; }
+
+.event-info__venue {
+  margin-top: 1.5rem !important;
+}
+
+.event-info__location {
+  margin-top: .35rem !important;
 }
 
 .visually-hidden {
@@ -118,12 +132,14 @@ h2 {
   padding: .75rem clamp(2rem, 6vw, 6rem);
   font-family: "Alegreya Sans", sans-serif;
   font-size: 1.15rem;
+  font-weight: 300;
   line-height: 1.8;
 }
 
 .details__date {
   margin: 0 0 .6rem;
   font-size: 1.35rem;
+  font-weight: 400;
 }
 
 address {
@@ -213,9 +229,6 @@ a:focus-visible {
   }
 
   .event-info {
-    width: 145%;
-    max-width: none;
-    margin-left: -22.5%;
     margin-top: 1.5rem;
   }
 
