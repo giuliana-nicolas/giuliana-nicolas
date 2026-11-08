@@ -9,6 +9,13 @@ Google Maps directions, and the embedded RSVP form in `index.html`. The names,
 date, venue, and floral artwork are loaded from the extracted images in
 `assets/`.
 
+## Languages and gifts
+
+Spanish is the default page (`index.html`); the English version is `en.html`.
+The ES / EN links at the top right switch between them. Keep both pages in sync
+when updating event details. Both versions include the Banco Itaú gift account.
+The embedded Google Form is shared and its questions remain in Spanish.
+
 ## RSVP submissions
 
 The RSVP section embeds a published Google Form. Responses are handled by Google and can be connected to a Google Sheet; no guest data is stored in GitHub.

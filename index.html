@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <nav class="language-switch" aria-label="Idioma">
+      <a href="index.html" lang="es" hreflang="es" aria-current="page">ES</a>
+      <span aria-hidden="true">/</span>
+      <a href="en.html" lang="en" hreflang="en">EN</a>
+    </nav>
     <main class="invitation" aria-labelledby="wedding-title">
       <h1 id="wedding-title" class="visually-hidden">Giuliana y Nicolás</h1>
       <img class="flowers flowers--left" src="assets/flowers-left.png" alt="" aria-hidden="true" />
@@ -87,6 +92,27 @@
           loading="lazy"
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         ></iframe>
+      </div>
+    </section>
+
+    <section class="gifts" aria-labelledby="gifts-title">
+      <div class="gifts__heading">
+        <h2 id="gifts-title">Regalos</h2>
+      </div>
+      <div class="gifts__content">
+        <p>Tu presencia es nuestro mejor regalo. Si además querés hacernos un regalo, podés hacerlo por transferencia a cualquiera de estas cuentas:</p>
+        <h3 class="gifts__region">Uruguay</h3>
+        <p class="gifts__currency">Dólares</p>
+        <dl class="gifts__account">
+          <div><dt>Banco</dt><dd>Banco Itaú</dd></div>
+          <div><dt>Número de cuenta</dt><dd>9162144</dd></div>
+        </dl>
+        <h3 class="gifts__region">Internacional</h3>
+        <p class="gifts__currency">Euros</p>
+        <dl class="gifts__account">
+          <div><dt>IBAN</dt><dd>FR76 3000 3027 1700 0500 6167 121</dd></div>
+          <div><dt>BIC</dt><dd>SOGEFRPP</dd></div>
+        </dl>
       </div>
     </section>
 
