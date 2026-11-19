@@ -29,24 +29,6 @@
       <img class="flowers flowers--right" src="assets/flowers-right.png" alt="" aria-hidden="true" />
     </main>
 
-    <section class="details" aria-labelledby="venue-title">
-      <div class="details__heading">
-        <h2 id="venue-title">¿Cómo llegar?</h2>
-      </div>
-      <div class="details__content">
-        <p class="details__date">Sábado 30 de enero de 2027, 19 horas</p>
-        <address>
-          Chacra “Entre Viñedos”<br />Las Violetas, Canelones, Uruguay
-        </address>
-        <a class="text-link" href="https://maps.app.goo.gl/vXwZ5cYCHZ2GvhXVA" target="_blank" rel="noreferrer">
-          Abrir en Google Maps
-          <svg class="text-link__icon" aria-hidden="true" viewBox="0 0 16 16" fill="none">
-            <path d="M4 12 12 4M6 4h6v6" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-        </a>
-      </div>
-    </section>
-
     <section class="rsvp" id="rsvp" aria-labelledby="rsvp-title">
       <div class="rsvp__intro">
         <h2 id="rsvp-title">Confirmar asistencia</h2>
@@ -64,27 +46,58 @@
       </div>
     </section>
 
-    <section class="travel-group" aria-labelledby="travel-group-title">
-      <div class="travel-group__heading">
-        <h2 id="travel-group-title">Coordinar transporte</h2>
+    <section class="details" aria-labelledby="venue-title">
+      <div class="details__heading">
+        <h2 id="venue-title">¿Cómo llegar?</h2>
       </div>
-      <div class="travel-group__content">
-        <img class="travel-group__qr" src="assets/qr_wpp.png" alt="Código QR para unirse al grupo de WhatsApp de transporte" />
-        <a class="travel-group__link" href="https://chat.whatsapp.com/HbonAlKTDCjJUm64de46P4" target="_blank" rel="noreferrer">
-          Unirme al grupo de WhatsApp
-          <svg class="travel-group__icon" aria-hidden="true" viewBox="0 0 16 16" fill="none">
+      <div class="details__content">
+        <div class="details__address">
+        <p class="details__date">Sábado 30 de enero de 2027, 19 horas</p>
+        <address>
+          Chacra “Entre Viñedos”<br />Las Violetas, Canelones, Uruguay
+        </address>
+        <a class="text-link" href="https://maps.app.goo.gl/vXwZ5cYCHZ2GvhXVA" target="_blank" rel="noreferrer">
+          Abrir en Google Maps
+          <svg class="text-link__icon" aria-hidden="true" viewBox="0 0 16 16" fill="none">
             <path d="M4 12 12 4M6 4h6v6" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </a>
+        </div>
+      <a class="details__transport" href="https://chat.whatsapp.com/HbonAlKTDCjJUm64de46P4" target="_blank" rel="noreferrer">
+        <img class="details__qr" src="assets/qr_wpp.png" alt="Código QR para unirse al grupo de WhatsApp de transporte" />
+      </a>
+      </div>
+    </section>
+
+    <section class="dress-code" aria-labelledby="dress-code-title">
+      <img class="dress-code__icon" src="assets/formal-attire.svg" alt="" aria-hidden="true" width="160" height="180" />
+      <h2 id="dress-code-title">Vestimenta formal</h2>
+      <img class="dress-code__icon" src="assets/formal-dress.svg" alt="" aria-hidden="true" width="160" height="180" />
+    </section>
+
+    <section class="gifts" aria-labelledby="gifts-title">
+      <div class="gifts__heading">
+        <h2 id="gifts-title"><img class="gifts__image" src="assets/gift2.png" alt="Regalos" width="362" height="372" /></h2>
+      </div>
+      <div class="gifts__content">
+        <h3 class="gifts__region">Banco Itaú</h3>
+        <dl class="gifts__account">
+          <div><dt>Dólares</dt><dd>3337392</dd></div>
+          <div><dt>Pesos</dt><dd>3337384</dd></div>
+        </dl>
+        <h3 class="gifts__region">Société Générale</h3>
+        <dl class="gifts__account">
+          <div><dt>Euros · IBAN</dt><dd>FR76 3000 3027 1700 0500 6167 121</dd></div>
+          <div><dt>BIC</dt><dd>SOGEFRPP</dd></div>
+        </dl>
       </div>
     </section>
 
     <section class="playlist" aria-labelledby="playlist-title">
       <div class="playlist__heading">
-        <h2 id="playlist-title">Playlist</h2>
+        <h2 id="playlist-title">¿Qué canción no puede faltar?</h2>
       </div>
       <div class="playlist__content">
-        <p>¿Qué canción no puede faltar?</p>
         <iframe
           class="playlist__embed"
           src="https://open.spotify.com/embed/playlist/00ogenAznVLQHIek65mozo?utm_source=generator"
@@ -92,27 +105,6 @@
           loading="lazy"
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         ></iframe>
-      </div>
-    </section>
-
-    <section class="gifts" aria-labelledby="gifts-title">
-      <div class="gifts__heading">
-        <h2 id="gifts-title">Regalos</h2>
-      </div>
-      <div class="gifts__content">
-        <p>Tu presencia es nuestro mejor regalo. Si además querés hacernos un regalo, podés hacerlo por transferencia a cualquiera de estas cuentas:</p>
-        <h3 class="gifts__region">Uruguay</h3>
-        <p class="gifts__currency">Dólares</p>
-        <dl class="gifts__account">
-          <div><dt>Banco</dt><dd>Banco Itaú</dd></div>
-          <div><dt>Número de cuenta</dt><dd>9162144</dd></div>
-        </dl>
-        <h3 class="gifts__region">Internacional</h3>
-        <p class="gifts__currency">Euros</p>
-        <dl class="gifts__account">
-          <div><dt>IBAN</dt><dd>FR76 3000 3027 1700 0500 6167 121</dd></div>
-          <div><dt>BIC</dt><dd>SOGEFRPP</dd></div>
-        </dl>
       </div>
     </section>
 

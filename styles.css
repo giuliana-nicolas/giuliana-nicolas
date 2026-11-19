@@ -2,7 +2,6 @@
   --paper: #fbfaf5;
   --ink: #18382f;
   --names-green: #536735;
-  --mist: #dbe8df;
   --peach: #efb99d;
   --white: #fffdf8;
   --display: "Italiana", Georgia, serif;
@@ -141,21 +140,36 @@ h2 {
 
 .details {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   align-items: center;
   min-height: auto;
   padding: 2rem clamp(2rem, 6vw, 6rem);
-  background: var(--names-green);
-  color: var(--white);
+  background: var(--paper);
+  color: var(--ink);
 }
 
 .details__content {
-  border-left: 1px solid rgba(255, 255, 255, .35);
-  padding: .75rem clamp(2rem, 6vw, 6rem);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 1rem;
+  border-left: 1px solid rgba(24, 56, 47, .35);
+  padding: .75rem clamp(1rem, 3vw, 3rem);
   font-family: "Alegreya Sans", sans-serif;
   font-size: 1.15rem;
   font-weight: 300;
   line-height: 1.8;
+}
+
+.details__transport {
+  display: block;
+  width: clamp(8rem, 13vw, 12rem);
+}
+
+.details__qr {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .details__date {
@@ -187,7 +201,8 @@ address {
   grid-template-columns: .9fr 1.1fr;
   align-items: start;
   gap: clamp(3rem, 8vw, 9rem);
-  background: var(--paper);
+  background: var(--names-green);
+  color: var(--white);
 }
 
 .rsvp__intro {
@@ -231,12 +246,41 @@ address {
   align-items: center;
   min-height: auto;
   padding: 2rem clamp(2rem, 6vw, 6rem);
-  background: var(--paper);
+  background: var(--names-green);
+  color: var(--white);
 }
 
 .playlist__content {
-  border-left: 1px solid rgba(24, 56, 47, .35);
+  border-left: 1px solid rgba(255, 255, 255, .35);
   padding: .75rem clamp(2rem, 6vw, 6rem);
+}
+
+#playlist-title {
+  font-size: clamp(2.25rem, 4.5vw, 4.5rem);
+  padding-right: 1.5rem;
+}
+
+.dress-code {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(.75rem, 3vw, 3rem);
+  padding: 3rem 1.5rem;
+  text-align: center;
+  background: var(--names-green);
+  color: var(--white);
+}
+
+.dress-code__icon {
+  display: block;
+  width: clamp(3.5rem, 10vw, 8rem);
+  flex-shrink: 0;
+  height: auto;
+}
+
+#dress-code-title {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.5rem);
 }
 
 .playlist__content p {
@@ -297,8 +341,8 @@ address {
 
 footer {
   padding: 1.5rem;
-  background: var(--ink);
-  color: var(--white);
+  background: var(--paper);
+  color: var(--ink);
   text-align: center;
   font-size: .72rem;
   letter-spacing: .14em;
@@ -365,9 +409,14 @@ a:focus-visible {
   .travel-group { padding-block: 2.5rem; }
 
   .details__content {
-    border-top: 1px solid rgba(255, 255, 255, .35);
+    grid-template-columns: minmax(0, 1fr) auto;
+    border-top: 1px solid rgba(24, 56, 47, .35);
     border-left: 0;
     padding: 1.5rem 0 0;
+  }
+
+  .details__transport {
+    width: clamp(6.5rem, 29vw, 9rem);
   }
 
   .travel-group__content {
@@ -378,7 +427,7 @@ a:focus-visible {
   }
 
   .playlist__content {
-    border-top: 1px solid rgba(24, 56, 47, .35);
+    border-top: 1px solid rgba(255, 255, 255, .35);
     border-left: 0;
     padding: 1.5rem 0 0;
   }
@@ -426,10 +475,17 @@ a:focus-visible {
   align-items: center;
   row-gap: 2rem;
   padding: 3rem clamp(2rem, 6vw, 6rem);
-  background: var(--mist);
+  background: var(--paper);
 }
 
-#gifts-title { font-size: clamp(2.75rem, 6.5vw, 6rem); }
+#gifts-title { margin: 0; }
+
+.gifts__image {
+  display: block;
+  width: min(100%, 20rem);
+  height: auto;
+  margin: 0 auto;
+}
 
 .gifts__content {
   border-left: 1px solid rgba(24, 56, 47, .35);
@@ -444,7 +500,7 @@ a:focus-visible {
 .gifts__region {
   margin: 1.5rem 0 .75rem;
   font-size: 1.35rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 .gifts__account + .gifts__region {
   border-top: 1px solid rgba(24, 56, 47, .35);
@@ -453,8 +509,8 @@ a:focus-visible {
 .gifts__account { margin: 0; }
 .gifts__account dd { overflow-wrap: anywhere; }
 .gifts__account div + div { margin-top: .75rem; }
-.gifts__account dt { font-size: 1rem; }
-.gifts__account dd { margin: 0; font-weight: 500; }
+.gifts__account dt { display: inline; }
+.gifts__account dd { display: inline; margin: 0 0 0 .4em; font-weight: inherit; }
 
 @media (max-width: 700px) {
   .invitation { padding-top: 4.5rem; }
